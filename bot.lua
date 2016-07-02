@@ -202,7 +202,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nbased on linux-file-manager :D\nthx to @imandaneshi\neditor: @unfriendly"
+	local bot_info = "یوزرنیم = @"..bot.username.."\nNنام= "..bot.first_name.."\nIdشناسه "..bot.id.." \nEditor: @alireza_PT
 
 	print(bot_info)
 
@@ -214,7 +214,7 @@ function bot_run()
 end
 
 function msg_processor(msg)
-	start = start..'\n[Source](https://github.com/pAyDaAr/lua-api-bot)'
+	start = start..'\n[Our channel](http://telegram.me/create_antispam_bot)'
 	if msg.new_chat_participant or msg.new_chat_title or msg.new_chat_photo or msg.left_chat_participant then return end
 	if msg.audio or msg.document or msg.video or msg.voice then return end -- Admins only !
 	if msg.date < os.time() - 5 then -- Ignore old msgs
